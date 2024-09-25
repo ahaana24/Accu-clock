@@ -13,11 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/employee/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(registerData),
-      });
+      const response = await fetch(
+        "https://java-app-latest-9axd.onrender.com/employee/login",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(registerData),
+        }
+      );
 
       if (response.ok) {
         const result = await response.text();

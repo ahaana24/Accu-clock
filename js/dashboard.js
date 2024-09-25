@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
   async function saveClockIn(clockInData) {
     try {
       const response = await fetch(
-        "http://localhost:8080/attendance/clock_in",
+        "https://java-app-latest-9axd.onrender.com/attendance/clock_in",
         {
           method: "POST",
           headers: {
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
   async function saveClockOut(clockOutData) {
     try {
       const response = await fetch(
-        "http://localhost:8080/attendance/clock_out",
+        "https://java-app-latest-9axd.onrender.com/attendance/clock_out",
         {
           method: "POST",
           headers: {

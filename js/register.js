@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       try {
         const response = await fetch(
-          "http://localhost:8080/employee/register",
+          "https://java-app-latest-9axd.onrender.com/employee/register",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
